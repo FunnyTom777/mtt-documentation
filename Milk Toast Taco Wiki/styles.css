@@ -1,0 +1,189 @@
+/* Universal Styles for MTT Wiki */
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5faff;
+  color: #1a1a1a;
+  line-height: 1.7;
+  padding: 20px;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: #0a3b5c;
+}
+
+h1 { font-size: 2.4rem; border-bottom: 3px solid #b0e3ff; padding-bottom: 6px; }
+h2 { font-size: 2rem; border-left: 5px solid #b0e3ff; padding-left: 10px; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.3rem; }
+
+/* Paragraphs */
+p {
+  margin-bottom: 14px;
+  font-size: 1rem;
+}
+
+/* Links */
+a {
+  color: #0088cc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background: #0094e8;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.15s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #007dc2;
+}
+
+.button-secondary {
+  background: #e2e2e2;
+  color: #333;
+}
+
+.button-secondary:hover {
+  background: #cfcfcf;
+}
+
+/* Code Blocks */
+code {
+  background: #cbe3f9;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  color: #003e6b;
+}
+
+pre {
+  background: #cbe3f9;
+  padding: 12px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 16px 0;
+  border-left: 4px solid #0094e8;
+}
+
+/* Boxes (like Docusaurus info/warning/success) */
+.box {
+  padding: 14px 18px;
+  border-radius: 10px;
+  margin: 18px 0;
+  border-left: 6px solid;
+}
+
+.box-info {
+  background: #e8f7ff;
+  border-color: #0094e8;
+}
+
+.box-success {
+  background: #e9ffe8;
+  border-color: #34c759;
+}
+
+.box-warning {
+  background: #fff6e3;
+  border-color: #ffa500;
+}
+
+.box-danger {
+  background: #ffeaea;
+  border-color: #d62828;
+}
+
+/* Navigation Bar */
+.navbar {
+  width: 100%;
+  background: #0a3b5c;
+  padding: 14px 20px;
+  color: white;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.navbar a {
+  color: #dff4ff;
+  font-weight: 600;
+}
+
+/* Horizontal Rule */
+hr {
+border: none;
+border-bottom: 3px solid #b0e3ff;
+margin: 30px 0;
+width: 100%;
+}
+.navbar a:hover {
+  color: white;
+}
+
+/* Content Container */
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: white;
+}
+
+th, td {
+  padding: 10px 12px;
+  border: 1px solid #cfdce8;
+}
+
+th {
+  background: #e4f3ff;
+  font-weight: bold;
+}
+
+/* Lists */
+ul, ol {
+  margin: 12px 0 12px 24px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  color: #555;
+  font-size: 0.9rem;
+}
