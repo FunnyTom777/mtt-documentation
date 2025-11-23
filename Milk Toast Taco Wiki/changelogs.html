@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTT Wiki – Changelogs</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Optional: tiny styling tweaks for markdown-rendered content */
+        main ul { margin-left: 1.5em; }
+        main h2 { margin-top: 1.5em; border-bottom: 2px solid #ccc; padding-bottom: 0.3em; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MTT Wiki Changelogs</h1>
+    <nav>
+        <a href="index.html">Home</a> -
+        <a href="gettingstarted.html">Getting Started</a> -
+        <a href="moddingmtt.html">Modding</a> -
+        <a href="faq.html">FAQ</a> -
+        <a href="changelogs.html">Changelogs</a>
+        <hr>
+    </nav>
+</header>
+
+<main id="changelog-container">
+    <!-- Markdown content will be rendered here -->
+</main>
+
+<!-- Your changelog in Markdown -->
+<script type="text/markdown" id="changelog-markdown">
+## v0.4 - 2025-11-23
+- Added a ideas list on the homepage
+
+## v0.3 — 2025-11-23
+- Added this Changelogs page (woooo!).
+- Cleaned up homepage spacing so it looks slightly less cursed.
+- Fixed a typo where “feeling” was spelled “felieng”.
+- Added fancy underline to the homepage because why not.
+
+## v0.2 — 2025-11-22
+- Created Modding page skeleton (still totally empty hehhe).
+- Made the CSS look like a discount Docusaurus theme.
+- Changed the nav links to be less spaghetti.
+
+## v0.1 — 2025-11-21
+- Created homepage.
+- Wrote a dramatic intro paragraph because it felt right. then proceeded to remove it because it looked dodgy
+- Broke the CSS twice and fixed it a third time.
+</script>
+
+<!-- Load marked.js from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+    const markdown = document.getElementById("changelog-markdown").textContent;
+    const container = document.getElementById("changelog-container");
+    container.innerHTML = marked.parse(markdown);
+</script>
+
+<footer>
+    <p>Copyright FunnyTom777 2025</p>
+</footer>
+
+</body>
+</html>
